@@ -1,0 +1,5 @@
+
+dependencies {
+    implementation files('libs/cw-deviceapi20190815.jar')
+    implementation files('libs/IGLBarDecoder.jar')
+}
