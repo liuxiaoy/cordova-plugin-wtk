@@ -24,5 +24,6 @@
         <source-file src="platforms/android/jniLibs/armeabi/libDeviceAPI.so" target-dir="libs/armeabi"/>
 
         <source-file src="platforms/android/libs/cw-deviceapi20190815.jar" target-dir="libs"/>
+        <source-file src="platforms/android/libs/IGLBarDecoder.jar" target-dir="libs"/>
     </platform>
 </plugin>
