@@ -18,6 +18,11 @@
         <js-module name="WTKPlugin" src="www/WTKPlugin.js">
             <clobbers target="WTKPlugin" />
         </js-module>
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="WTKPlugin">
+                <param name="android-package" value="com.liuxiaoy.cordova.wtk.WTKPlugin"/>
+            </feature>
+        </config-file>
         <framework src="platforms/android/wtk.gradle" custom="true" type="gradleReference" />
         <source-file src="platforms/android/com/liuxiaoy/cordova/wtk/WTKPlugin.java" target-dir="src/com/liuxiaoy/cordova/wtk" />
 
