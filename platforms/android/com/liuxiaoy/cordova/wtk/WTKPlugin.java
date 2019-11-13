@@ -133,7 +133,9 @@ public class WTKPlugin extends CordovaPlugin {
                         e.printStackTrace();
                         continue;
                     }
-                    callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, jsonObject));
+                    PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, jsonObject);
+                    pluginResult.setKeepCallback(true);
+                    callbackContext.sendPluginResult(pluginResult);
                 }
             }
         }
