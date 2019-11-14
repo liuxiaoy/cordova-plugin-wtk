@@ -26,19 +26,19 @@ public class WTKPlugin extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         switch (action) {
             case "initRFID": {
-                this.initRFID(callbackContext);
+                cordova.getThreadPool().execute((Runnable) () -> WTKPlugin.this.initRFID(callbackContext));
                 break;
             }
             case "freeRFID": {
-                this.freeRFID(callbackContext);
+                cordova.getThreadPool().execute((Runnable) () -> WTKPlugin.this.freeRFID(callbackContext));
                 break;
             }
             case "startInventoryTag": {
-                this.startInventoryTag(callbackContext);
+                cordova.getThreadPool().execute((Runnable) () -> WTKPlugin.this.startInventoryTag(callbackContext));
                 break;
             }
             case "stopInventory": {
-                this.stopInventory(callbackContext);
+                cordova.getThreadPool().execute((Runnable) () -> WTKPlugin.this.stopInventory(callbackContext));
                 break;
             }
             default: return false;
