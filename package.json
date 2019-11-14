@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-wtk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "this is wtk cordova plugin",
   "cordova": {
     "id": "cordova-plugin-wtk",
